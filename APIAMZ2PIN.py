@@ -1,7 +1,7 @@
 from amazon.api import AmazonAPI
 from pinterest import Pinterest
 import time 
-
+import random
 #Credentials for Amazon
 AMAZON_ACCESS_KEY = 'AKIAJJIMWZWCG6A43X7A'
 AMAZON_SECRET_KEY = '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'
@@ -27,4 +27,4 @@ for line in infile:
 			image_url = product.large_image_url,
 			description = product.title,
 			link = product.detail_page_url)
-		time.sleep(3.6)
+		time.sleep(random.randint(60,120))
