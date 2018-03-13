@@ -25,6 +25,7 @@ for line in infile:
 		#For item in search return list
 	try:
 		for product in products:
+			print(product)
 			try:
 				#Make Add
 				pin = pinterest.pin(
@@ -32,10 +33,11 @@ for line in infile:
 					image_url = product.large_image_url,
 					description = product.title,
 					link = product.detail_page_url)
+				print(product.detail_page_url)
 				time.sleep(random.randint(60,120))
 			except:
 				print("got here 2")
 				pass
 	except:
-		print("got here 3")
+		print("got here 3: " + line)
 		pass
