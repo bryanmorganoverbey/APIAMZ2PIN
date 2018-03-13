@@ -1,0 +1,13 @@
+Make sure you have Python 2 installed, then run:
+
+py -2 -m pip install bottlenose
+py -2 -m pip install lxml
+py -2 -m pip install python-dateutil
+py -2 -m pip install python-amazon-simple-product-api
+py -2 -m pip install pinterest-client
+py -2 -m pip install requests
+py -2 -m pip install requests_toolbelt
+
+You also need:
+An Amazon Product Advertising account
+An AWS account

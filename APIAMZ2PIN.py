@@ -16,15 +16,26 @@ infile = open('keywords.txt', 'r')
 #For item in keyword list:
 for line in infile:
 
-	#Do a search
-	products = amazon.search(Keywords=line, SearchIndex='All')
-	#For item in search return list
-	for product in products:
-
-		#Make Add
-		pin = pinterest.pin(
-			board_id='460282093105681293',
-			image_url = product.large_image_url,
-			description = product.title,
-			link = product.detail_page_url)
-		time.sleep(random.randint(60,120))
+		#Do a search
+	try:
+		products = amazon.search(Keywords=line, SearchIndex='All')
+	except:
+		print("got here 1")
+		pass
+		#For item in search return list
+	try:
+		for product in products:
+			try:
+				#Make Add
+				pin = pinterest.pin(
+					board_id='460282093105681293',
+					image_url = product.large_image_url,
+					description = product.title,
+					link = product.detail_page_url)
+				time.sleep(random.randint(60,120))
+			except:
+				print("got here 2")
+				pass
+	except:
+		print("got here 3")
+		pass
