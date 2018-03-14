@@ -13,7 +13,7 @@ You also need:
 An Amazon Product Advertising account
 An AWS account
 
-finally, move pinterest_client-1.0.2-py2.7.egg folder to /your/path/to/site-packages/
+finally, move pinterest_client-1.0.2-py2.7 folder to /your/path/to/site-packages/
 this is the api for pinterest. then run:
 py -2 setup.py install 
-from inside the pinterest_client-1.0.2-py2.7.egg folder.
+from inside the pinterest_client-1.0.2-py2.7 folder.
