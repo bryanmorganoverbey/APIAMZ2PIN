@@ -17,3 +17,6 @@ finally, move pinterest_client-1.0.2-py2.7 folder to /your/path/to/site-packages
 this is the api for pinterest. then run:
 py -2 setup.py install 
 from inside the pinterest_client-1.0.2-py2.7 folder.
+
+
+then go into the /your/path/to/site-packages/ folder and delete the pinterest_client-1.0.2-py2.7.egg file and change the name of the pinterest_client-1.0.2-py2.7 folder to pinterest_client-1.0.2-py2.7.egg
