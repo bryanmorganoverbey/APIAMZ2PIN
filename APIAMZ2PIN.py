@@ -3,11 +3,11 @@ from pinterest import Pinterest
 import time 
 import random
 #Credentials for Amazon
-AMAZON_ACCESS_KEY = 'AKIAJJIMWZWCG6A43X7A'
-AMAZON_SECRET_KEY = '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'
+AMAZON_ACCESS_KEY = 'AKIAJJIMWZWCG6A43X7'
+AMAZON_SECRET_KEY = 'oGQmOaSZNwcIkJgWZyxe7KgDDUSaQgAi88orVRb'
 AMAZON_ASSOC_TAG = 'bryan787-20'
 #Credentials for Pinterest
-pinterest = Pinterest(username_or_email='bryanmorganoverbey@gmail.com', password='/b/ryan787')
+pinterest = Pinterest(username_or_email='bryanmorganoverbey@gmail.com', password='')
 logged_in = pinterest.login()
 amazon = AmazonAPI(AMAZON_ACCESS_KEY, AMAZON_SECRET_KEY, AMAZON_ASSOC_TAG)
 #Define a list of keywords for a search
