@@ -3,6 +3,7 @@ from pinterest import Pinterest
 import time 
 import random
 #Credentials for Amazon
+#Note these aren't real keys. These are examples.
 AMAZON_ACCESS_KEY = 'AKIAJJIMWZWCG6A43X7'
 AMAZON_SECRET_KEY = 'oGQmOaSZNwcIkJgWZyxe7KgDDUSaQgAi88orVRb'
 AMAZON_ASSOC_TAG = 'bryan787-20'
